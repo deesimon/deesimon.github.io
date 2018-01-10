@@ -11,10 +11,16 @@ function scrollNav() {
         $('.' + theClass).parent('li').addClass('active');
         //Animate
         $('html, body').stop().animate({
-            scrollTop: $($(this).attr('href')).offset().top - 160
+            scrollTop: $($(this).attr('href')).offset().top - 50
         }, 600);
         return false;
+
     });
     $('.scrollTop a').scrollTop();
 }
 scrollNav();
+
+$('a.nav-link ').click(function () {
+    //Toggle Class
+    $(".collapse").removeClass("show");
+});

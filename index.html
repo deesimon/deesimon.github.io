@@ -11,24 +11,22 @@
     <link href="https://fonts.googleapis.com/css?family=Muli:200,300,400,600,700|Open+Sans:300,400,600,600i,700,700i" rel="stylesheet">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
     <!-- Bootstrap Vertical Nav -->
     <link rel="stylesheet" href="css/styles.css">
 
-
-
-
 </head>
 
 <body>
-    <button class="btn btn-primary mobile-menu" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                    <span class="">Menu</span>
-                </button>
+    <nav class="navbar-toggler navbar-toggler-right fixed-top navbar-light">
+        <button class="mobile-menu" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    <span class="navbar-toggler-icon"></span>
+                </button></nav>
     <div class="container">
         <div class="row">
-            <div class="col-md-4 col-lg-3">
+            <div class="col-md-4 col-lg-3  left-side pad20">
 
                 <div class="bootstrap-vertical-nav">
 
@@ -57,18 +55,19 @@
 
             </div>
             <!-- Content area -->
-            <div class="col-md-8 col-lg-9">
-                <section class="row text-center" id="about">
+            <div class="col-md-8 col-lg-9 pad20  pad-right">
+                <section class="row " id="about">
                     <div class="col-md-12 col-lg-12">
                         <h1>BPI Building Science Principles</h1>
                         <span class="date">January 22, 2018 @ 10 a.m. - December 29, 2018 @ 5 p.m.</span>
-                        <p>Join us for a two-day boot camp to complete the online DOE Sim Training & Testing and score your first home with a mentor to become a qualified Home Energy Score Assessor. Home Energy Score is a great way to enhance your business. You can supply customers with reliable home energy information to help them save money on energy costs and live more comfortably in their homes by becoming a Home Energy Score Assessor. We want to help you take the next steps in completing the Home Energy Score training and testing requirements.</p><button class="btn btn-primary">register</button>
+                        <p>Join us for a two-day boot camp to complete the online DOE Sim Training & Testing and score your first home with a mentor to become a qualified Home Energy Score Assessor. Home Energy Score is a great way to enhance your business. You can supply customers with reliable home energy information to help them save money on energy costs and live more comfortably in their homes by becoming a Home Energy Score Assessor. We want to help you take the next steps in completing the Home Energy Score training and testing requirements.</p><button class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">register</button>
+
                     </div>
                 </section>
                 <section class="row" id="speakers">
-                    <h2 class="col-lg-12 text-center">Speakers</h2>
+                    <h2 class="col-lg-12 ">Speakers</h2>
                     <div class="col-lg-6 clearfix">
-                        <div class="clearfix">
+                        <div class="clearfix speakers-details">
                             <img src="img/Matthew-Souther.jpg" class="speakers" />
                             <h4>Matthew Souther</h4>
                             <span class="position">Senior Manager, Information Systems</span>
@@ -77,7 +76,7 @@
                         <p>Matthew Souther leads web application development and support for Build It Green. He specializes in identifying promising technological solutions and moving high-impact projects forward. Souther brings nine years of experience delivering process improvements to nonprofit programs, with four years focused on cloud-based technology and systems design.</p>
                     </div>
                     <div class="col-lg-6 clearfix">
-                        <div class="clearfix">
+                        <div class="clearfix speakers-details">
                             <img src="img/John-Costello.jpg" class="speakers" />
                             <h4>John Costello</h4>
                             <span class="position">Project Manager in Educational Services</span>
@@ -87,7 +86,7 @@
                     </div>
                 </section>
                 <section class="row" id="schedule">
-                    <h2 class="col-lg-12 text-center">Schedule</h2>
+                    <h2 class="col-lg-12 ">Schedule</h2>
                     <div class="col-lg-12">
                         <h4>Day 1</h4>
                         <h5>Learning lightning</h5>
@@ -103,8 +102,8 @@
                     <div class="col-lg-12 map-responsive">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d26053.562482517358!2d-120.652685!3d35.288701!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbfee2a1cb305fbe2!2sVeterans+Memorial+Building!5e0!3m2!1sen!2sus!4v1515496458179" width="825" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
                     </div>
-                    <div class="col-lg-12 text-center map-info">
-                        <h2 class="text-center">San Luis Obispo County <br> Veterans Hall</h2>
+                    <div class="col-lg-12  map-info">
+                        <h2 class="">San Luis Obispo County Veterans Hall</h2>
                         <p>
                             <span>January 22, 2018 @ 10 a.m. - December 29, 2018 @ 5 p.m.</span>
                             <span>(510) 285-6221 </span>
@@ -115,13 +114,49 @@
                     </div>
                 </section>
                 <section class="row" id="sponsors">
-                    <h2 class="col-lg-12 text-center">Sponsors</h2>
+                    <h2 class="col-lg-12 ">Sponsors</h2>
                     <div class="col-lg-12">
                         <p>Sponsors image here</p>
                     </div>
 
                 </section>
 
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
             </div>
         </div>
     </div>
@@ -136,6 +171,11 @@
     <script src="js/jquery-easing/jquery.easing.min.js"></script>
     <!-- Custom JavaScript for this theme -->
     <script src="js/main.js"></script>
+
+    <script>
+        $('#myModal').modal()
+
+    </script>
 
 
 </body>
