@@ -40,7 +40,7 @@ $("ul.nav li a[href^='#']").on('click', function (e) {
 
     // animate
     $('html, body').animate({
-        scrollTop: $(hash).offset().top - 20
+        scrollTop: $(hash).offset().top
     }, 600, function () {
 
         // when done, add hash to url
