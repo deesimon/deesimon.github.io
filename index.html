@@ -19,7 +19,8 @@
 
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".bs-docs-sidebar">
+
     <nav class="navbar-toggler navbar-toggler-right fixed-top navbar-light">
         <button class="mobile-menu" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
                     <span class="navbar-toggler-icon"></span>
@@ -31,10 +32,10 @@
                 <div class="bootstrap-vertical-nav">
 
                     <span class="span-head">Build IT Green</span>
-                    <div class="collapse" id="collapseExample">
+                    <div class="collapse bs-docs-sidebar" id="collapseExample">
                         <ul class="nav flex-column">
-                            <li class="nav-item active">
-                                <a class="nav-link " href="#about">About</a>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about">About</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link " href="#speakers">Speakers</a>
@@ -47,6 +48,9 @@
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#sponsors">Sponsors</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact-us">Contact Us</a>
                             </li>
                         </ul>
                     </div>
@@ -115,10 +119,33 @@
                 </section>
                 <section class="row" id="sponsors">
                     <h2 class="col-lg-12 ">Sponsors</h2>
-                    <div class="col-lg-12">
+                    <div class="col-lg-12 sponsors-image">
                         <p>Sponsors image here</p>
+                        <ul>
+                            <li>
+                                <a href="http://jvs.org/" target="_blank"><img src="img/JVS_logo.png" alt="JVS" /></a>
+                            </li>
+                            <li>
+                                <a href="http://www.stopwaste.org/" target="_blank"><img src="img/stopwaste.png" alt="Stop Waste" /></a>
+                            </li>
+                            <li>
+                                <a href="https://www.energyupgradeca.org/" target="_blank"><img src="img/energyupgradeca.jpg" alt="Energy Upgrade" /></a>
+                            </li>
+                        </ul>
                     </div>
-
+                </section>
+                <section class="row" id="contact-us">
+                    <h2 class="col-lg-12 ">Contact Us</h2>
+                    <div class="col-lg-12 sponsors-image">
+                        <h3>BUILD IT GREEN</h3>
+                        <p>
+                            <span class="display-block">Education and Traning Department</span>
+                            <span class="display-block">Oakland CA 94612</span>
+                            <a href="tel:510285-6221"><span class="display-block">(510) 285-6221</span></a>
+                            <a href="mailto:training@builditgreen.org"><span class="display-block">training@builditgreen.org</span></a>
+                            <a href="https://www.builditgreen.org" target="_blank"><span class="display-block">builditgreen.org</span></a>
+                        </p>
+                    </div>
                 </section>
 
             </div>
@@ -127,11 +154,14 @@
 
 
     <!-- Modal -->
-    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="ModalLongTitle" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                    <h6 class="modal-title" id="ModalLongTitle">
+                        <span class="display-block ">BPI Building Science Principles</span>
+                        <span class="display-block">JANUARY 22, 2018 @ 10:00 AM - DECEMBER 29, 2018 @ 5:00 PM</span>
+                    </h6>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -139,17 +169,21 @@
                 <div class="modal-body">
                     <form>
                         <div class="form-group">
-                            <label for="exampleInputEmail1">Email address</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                            <label for="FirstName">First Name</label>
+                            <input type="text" class="form-control" id="FirstName">
+                        </div>
+                        <div class="form-group">
+                            <label for="LastName">Last Name</label>
+                            <input type="text" class="form-control" id="LastName">
+                        </div>
+                        <div class="form-group">
+                            <label for="InputEmail">Email address</label>
+                            <input type="email" class="form-control" id="InputEmail" aria-describedby="">
                             <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputPassword1">Password</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                        </div>
-                        <div class="form-check">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                            <label for="Phone">Phone</label>
+                            <input type="text" class="form-control" id="Phone">
                         </div>
                         <button type="submit" class="btn btn-primary">Submit</button>
                     </form>
@@ -169,13 +203,7 @@
 
     <!-- Plugin JavaScript -->
     <script src="js/jquery-easing/jquery.easing.min.js"></script>
-    <!-- Custom JavaScript for this theme -->
     <script src="js/main.js"></script>
-
-    <script>
-        $('#myModal').modal()
-
-    </script>
 
 
 </body>
